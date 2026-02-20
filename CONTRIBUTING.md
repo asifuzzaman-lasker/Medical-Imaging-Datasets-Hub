@@ -57,14 +57,14 @@ Every dataset file must follow this structure:
 
 # Dataset Name
 
-**Dataset Name:**  
-**Body Region:**  
-**Modality:**  
-**Primary Task:**  
-**Format:**  
-**Approx Size/Images:**  
-**License:**  
-**Access Type:**  
+- **Dataset Name:**  
+- **Body Region:**  
+- **Modality:**  
+- **Primary Task:**  
+- **Format:**  
+- **Approx Size/Images:**  
+- **License:**  
+- **Access Type:**  
 
 ---
 
@@ -72,14 +72,14 @@ Every dataset file must follow this structure:
 
 Brief description of the dataset.
 
----
+
 
 ## Research Tasks
 
 - Task 1
 - Task 2
 
----
+
 
 ## Source
 
@@ -142,3 +142,62 @@ Before submitting a Pull Request:
 - Verify license information
 - Ensure formatting matches existing entries
 - Run a CSV formatting check (no broken columns)
+
+
+### 🔄 Submitting a Pull Request
+
+1. Commit your changes with a clear message:
+
+Added dataset: ```XYZ (Brain MRI Segmentation)```
+
+2. Push to your fork.
+
+3. Submit a Pull Request with a short description of what you added or modified.
+
+---
+
+### Formatting Guidelines
+
+- Use clear markdown headings
+- Keep descriptions concise but informative
+- Maintain consistent metadata order
+- Avoid unnecessary styling
+- Follow existing formatting conventions
+
+### 🧠 Academic Integrity
+
+Please ensure:
+
+- Proper citation of original dataset sources
+- Respect for dataset licenses
+- No redistribution of restricted datasets
+- No hosting of large dataset files in this repository
+
+This repository serves as an index, not a dataset host.
+
+---
+
+### 💡 Suggestions & Improvements
+
+If you have ideas to improve:
+
+- Metadata structure
+- Categorization strategy
+- Automation scripts
+- Filtering capabilities
+- Repository architecture
+
+Please open an Issue first to discuss major changes.
+
+---
+
+📜 License Notice
+
+By contributing, you agree that your contributions will be licensed under the same license as this repository.
+
+
+### 🙏 Thank You
+
+Your contribution helps improve transparency and accessibility in medical imaging research.
+
+Together, we can build a structured and reliable resource for the global research and engineering community.
