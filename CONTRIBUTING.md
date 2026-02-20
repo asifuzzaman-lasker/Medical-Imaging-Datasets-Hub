@@ -54,7 +54,7 @@ If the body region folder does not exist, create it.
 
 Every dataset file must follow this structure:
 
-```markdown
+
 # Dataset Name
 
 **Dataset Name:**  
@@ -90,3 +90,55 @@ Official dataset URL
 ## Citation
 
 Academic reference if available
+
+### Step 4: Update Metadata Files
+
+You must update:
+```
+metadata/dataset_index.csv
+metadata/dataset_index.json
+```
+
+Ensure consistency between:
+- CSV entry
+- JSON entry
+- Markdown dataset file
+
+All metadata fields must match.
+
+
+## 📊 Metadata Standards
+
+Please follow these formatting rules:
+
+- Use consistent naming for modalities (MRI, CT, X-ray, Ultrasound, PET)
+- Use | to separate multiple modalities
+- Use | to separate multiple tasks
+- Avoid abbreviations unless widely recognized
+- Do not use promotional language
+- Provide official source links only
+
+## 🔍 Dataset Requirements
+
+Only include datasets that:
+
+- Are publicly available
+- Have official access links
+- Are legitimate academic or institutional releases
+- Provide clear licensing information
+
+Do NOT include:
+
+- Private datasets
+- Unverified Google Drive links
+- Pirated data
+- Commercial datasets without permission
+
+### 🧪 Quality Control
+
+Before submitting a Pull Request:
+- Check that all links work
+- Ensure metadata is complete
+- Verify license information
+- Ensure formatting matches existing entries
+- Run a CSV formatting check (no broken columns)
