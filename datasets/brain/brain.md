@@ -1,4 +1,4 @@
-# 🧠 Brain Medical Imaging Datasets Hub
+## 🧠 Brain Medical Imaging Datasets Hub
 
 This repository provides **authentic, research-grade brain MRI and CT imaging datasets** suitable for **deep learning, classification, segmentation, and medical AI research**.
 
@@ -6,7 +6,7 @@ These datasets are widely used in **peer-reviewed papers, MICCAI challenges, and
 
 ---
 
-# 📊 Dataset List
+## 📊 Dataset List
 
 | Dataset Name | Disease / Purpose | Modalities | Size | Access |
 |-------------|------------------|------------|------|--------|
@@ -20,7 +20,7 @@ These datasets are widely used in **peer-reviewed papers, MICCAI challenges, and
 
 ---
 
-# 🧠 1. BraTS (Brain Tumor Segmentation)
+## 🧠 1. BraTS (Brain Tumor Segmentation)
 
 **Official Website:**  
 https://www.med.upenn.edu/cbica/brats2021/data.html
@@ -43,7 +43,7 @@ https://www.med.upenn.edu/cbica/brats2021/data.html
 
 ---
 
-# 🧠 2. TCIA (The Cancer Imaging Archive)
+## 🧠 2. TCIA (The Cancer Imaging Archive)
 
 **Website:**  
 https://www.cancerimagingarchive.net/
@@ -63,7 +63,7 @@ https://www.cancerimagingarchive.net/
 
 ---
 
-# 🧠 3. OpenNeuro
+## 🧠 3. OpenNeuro
 
 **Website:**  
 https://openneuro.org/
