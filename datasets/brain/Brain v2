@@ -1,1 +1,146 @@
+# 🧠 BraTS – Brain Tumor Segmentation Dataset
 
+## 📌 Dataset Overview
+
+- **Full Name:** Brain Tumor Segmentation (BraTS) Challenge Dataset  
+- **Organizer:** MICCAI BraTS Challenge  
+- **Official Website:** https://braintumorsegmentation.org/  
+- **Primary Domain:** Brain Glioma MRI  
+- **Access Type:** Public (Registration Required)  
+- **Data Format:** NIfTI (.nii / .nii.gz)
+
+---
+
+## 🧠 Description
+
+The BraTS (Brain Tumor Segmentation) dataset is a multi-institutional collection of pre-operative brain MRI scans of glioma patients. It is one of the most widely used benchmark datasets for automated brain tumor segmentation research.
+
+The dataset includes expert-annotated tumor segmentation masks and is curated for standardized evaluation of machine learning and deep learning models.
+
+BraTS is officially used in the MICCAI Brain Tumor Segmentation Challenge and is considered a gold-standard dataset for brain tumor analysis.
+
+---
+
+## 📡 MRI Modalities Included
+
+Each patient case contains four aligned MRI sequences:
+
+| Modality | Description |
+|----------|------------|
+| T1 | Native T1-weighted MRI |
+| T1c | T1-weighted MRI with contrast enhancement |
+| T2 | T2-weighted MRI |
+| FLAIR | Fluid Attenuated Inversion Recovery |
+
+All modalities are co-registered, skull-stripped, and resampled to uniform spacing.
+
+---
+
+## 🧩 Segmentation Labels
+
+Tumor annotations are provided with the following labels:
+
+| Label Value | Region |
+|------------|--------|
+| 0 | Background |
+| 1 | Necrotic and Non-Enhancing Tumor Core |
+| 2 | Edema |
+| 4 | Enhancing Tumor |
+
+### Derived Evaluation Regions
+
+- **Whole Tumor (WT)** = 1 + 2 + 4  
+- **Tumor Core (TC)** = 1 + 4  
+- **Enhancing Tumor (ET)** = 4  
+
+---
+
+## 📂 Typical Folder Structure
+
+```
+datasets/
+└── Brain/
+    └── Brats/
+        ├── images/
+        │   ├── patient_001/
+        │   │   ├── T1.nii.gz
+        │   │   ├── T1c.nii.gz
+        │   │   ├── T2.nii.gz
+        │   │   └── FLAIR.nii.gz
+        ├── labels/
+        │   ├── patient_001/
+        │   │   └── segmentation.nii.gz
+        └── README.md
+```
+
+---
+
+## 🎯 Research Applications
+
+- 3D Brain Tumor Segmentation  
+- Multimodal MRI Fusion  
+- Radiomics Feature Extraction  
+- Survival Prediction  
+- Transformer-based Medical Imaging  
+- nnU-Net Benchmarking  
+- Cross-Dataset Generalization Studies  
+
+---
+
+## 🛠 Recommended Preprocessing Pipeline
+
+1. N4 Bias Field Correction  
+2. Intensity Normalization (Z-score per volume)  
+3. Resampling to isotropic resolution  
+4. 3D Patch Extraction  
+5. Data Augmentation (flip, rotation, elastic deformation)  
+
+---
+
+## 📊 Evaluation Metrics
+
+Common evaluation metrics used in BraTS challenge:
+
+- Dice Similarity Coefficient (DSC)  
+- Hausdorff Distance (HD95)  
+- Sensitivity  
+- Specificity  
+
+---
+
+## 📥 Download Instructions
+
+1. Visit: https://braintumorsegmentation.org/  
+2. Register an account  
+3. Accept dataset usage agreement  
+4. Download latest BraTS release  
+
+> Note: Redistribution is not permitted. Always download from the official source.
+
+---
+
+## 📚 Citation
+
+If you use BraTS dataset in research, please cite:
+
+```
+Menze, B. H., et al. (2014).
+The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).
+IEEE Transactions on Medical Imaging.
+```
+
+```
+Bakas, S., et al. (2017).
+Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels.
+Scientific Data.
+```
+
+---
+
+## 🔬 Why BraTS Is Important
+
+- Multi-institutional standardized dataset  
+- Expert-annotated segmentation masks  
+- Widely cited in medical imaging research  
+- Benchmark dataset for segmentation models  
+- Strong baseline comparison for publication-level research
